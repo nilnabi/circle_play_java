@@ -2,6 +2,9 @@ machine:
   timezone: Asia/Tokyo
   java:
     version: oraclejdk8
+dependencies:
+  override:
+    - ./activator update
 test:
   override:
     - ./activator test
