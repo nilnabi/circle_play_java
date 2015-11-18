@@ -4,7 +4,7 @@ machine:
     version: oraclejdk8
 dependencies:
   override:
-    - ./activator update
+    - ./activator clean update
 test:
   override:
     - ./activator test
