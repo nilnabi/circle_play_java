@@ -1,0 +1,12 @@
+machine:
+  timezone: Asia/Tokyo
+  java:
+    version: oraclejdk8
+test:
+  override:
+    - ./activator test
+deployment:
+  master:
+    branch: master
+    commands:
+      - ./activator dist
